@@ -51,7 +51,7 @@ class ltc_demo_unit_test_session3 IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       exporting
         act                  = lv_yrs_srvc
-        exp                  = round( val = ( sy-datum - lv_dateofhire + 1000000 ) / 365 dec = 1 )
+        exp                  = round( val = ( sy-datum - lv_dateofhire + 100000000 ) / 365 dec = 1 )
     ).
   endmethod.
 
